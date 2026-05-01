@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --bg-0: #07080b;
+  --bg-1: #0c0d12;
+  --bg-2: #11131a;
+  --bg-3: #171a23;
+  --line: rgba(255,255,255,0.06);
+  --line-strong: rgba(255,255,255,0.10);
+  --text-0: #f4f5f8;
+  --text-1: #c5c8d2;
+  --text-2: #7c8194;
+  --text-3: #4d5266;
+}
+
+body {
+  font-family: 'Inter', 'Noto Sans JP', system-ui, sans-serif;
+  background: #07080b;
+  color: #f4f5f8;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-feature-settings: 'tnum';
+}
+
+@keyframes pulse-dot {
+  0%   { box-shadow: 0 0 0 0 rgba(16,185,129,0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(16,185,129,0); }
+  100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+}
+.pulse-dot { animation: pulse-dot 1.8s ease-out infinite; }
